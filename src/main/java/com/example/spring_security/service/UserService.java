@@ -55,7 +55,7 @@ public class UserService {
                 )
         );
 
-        //var u = userRepository.findByUserName(user.getUserName());
+        
         if(authenticate.isAuthenticated()) {
             return jwtService.generateToken(userSec);
 //            return "success";
